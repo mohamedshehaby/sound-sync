@@ -1,10 +1,16 @@
 # Sound Sync
 
-This is a web application for sound streaming built with TypeScript, JavaScript, React, and npm. It uses Stripe for payment processing and Supabase for backend services.
+A sophisticated music streaming platform with seamless audio streaming, curated playlists, and personalized recommendations. Engineered innovative sync functionalities for a user-friendly experience. Demonstrates my proficiency in full-stack development and end-to-end project management.
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+## Features
+
+- **User Authentication:** Users can sign up and log in using email, GitHub.
+- **Browse Content:** Explore a vast library of music, playlists.
+- **Favorite List:** Users can add items to their favorite list for easy access later.
+- **Search Functionality:** Search for specific movies, TV shows, or actors.
+- **Responsive Design:** The application is responsive and works seamlessly across different devices.
+
 
 ### Prerequisites
 
@@ -21,24 +27,36 @@ git clone https://github.com/mohamedshehaby/sound-sync
 ```bash
 npm install
 ```
-3. Create a `.env.local` file in the root directory and fill it with your keys:
+3. Create a `.env.local` file in the root directory and fill it with your keys: This project using the following environment variables:
+    1. Supabase to handel authentication, authorization with JWT, Github OAuth.
+   2. Supabase to handle uploading and fetching images, music and other data.
+
 ```bash
 NEXT_PUBLIC_SUPABASE_URL=<your_supabase_url>
 NEXT_PUBLIC_SUPABASE_ANON_KEY=<your_supabase_anon_key>
 SUPABASE_SERVIVE_ROLE_KEY=<your_supabase_service_role_key>
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=<your_stripe_publishable_key>
-STRIPE_SECRET_KEY=<your_stripe_secret_key>
-STRIPE_WEBHOOK_SECRET=<your_stripe_webhook_secret>
 ```
 4. Run the development server
 ```bash
 npm run dev
 ```
 
-## Built With
+## Technologies Used
 
 - [React](https://reactjs.org/) - The web framework used
+- [Next.js](https://nextjs.org/) - The web framework used
 - [TypeScript](https://www.typescriptlang.org/) - The language used
 - [npm](https://www.npmjs.com/) - Dependency Management
-- [Stripe](https://stripe.com/) - Used for payment processing
 - [Supabase](https://supabase.io/) - Used for backend services
+
+
+## Contributing
+
+Contributions are welcome! To contribute to the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature/improvement).
+3. Make your changes.
+4. Commit your changes (git commit -m 'Add some feature').
+5. Push to the branch (git push origin feature/improvement).
+6. Create a new Pull Request.

@@ -41,18 +41,24 @@ export default function Library() {
         />
       </div>
       <div className="flex flex-col gap-y-2 mt-4 px-3">
-        {songs?.map((song) => (
-          <MediaItem
-            key={song.id}
-            song={song}
-            onClick={() => {
-              player.onPlay(
-                song.id,
-                songs.map((song) => song.id),
-              );
-            }}
-          />
-        ))}
+        {!user ? (
+          <p> Please login to view your library </p>
+        ) : !songs ? (
+          <p> No songs found in your library </p>
+        ) : (
+          songs?.map((song) => (
+            <MediaItem
+              key={song.id}
+              song={song}
+              onClick={() => {
+                player.onPlay(
+                  song.id,
+                  songs.map((song) => song.id),
+                );
+              }}
+            />
+          ))
+        )}
       </div>
     </div>
   );
